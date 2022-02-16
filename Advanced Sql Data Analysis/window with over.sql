@@ -1,4 +1,7 @@
-/****** Script for SelectTopNRows command from SSMS  ******/
+--WINDOW FUNCTIONS allow you to include aggregate calculations in your queries
+--without otherwise changing the output in any way...ie: not having to use groupby
+--The aggregate calculation is simply added to your query as an additional column
+
 SELECT TOP (1000) [BusinessEntityID]
       ,[TerritoryID]
       ,[SalesQuota]
@@ -12,5 +15,6 @@ SELECT TOP (1000) [BusinessEntityID]
       ,[rowguid]
       ,[ModifiedDate]
   FROM [AdventureWorks2019].[Sales].[SalesPerson]
+
 
   
