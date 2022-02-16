@@ -1,0 +1,18 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT [As Of DateTime] = GETDATE()
+      ,[NationalIDNumber]
+      ,[LoginID]
+      ,[OrganizationNode]
+      ,[OrganizationLevel]
+      ,[JobTitle]
+      ,[BirthDate]
+      ,[MaritalStatus]
+      ,[Gender]
+      ,[HireDate]
+      ,[SalariedFlag]
+      ,[VacationHours]
+      ,[SickLeaveHours]
+      ,[CurrentFlag]
+      ,[rowguid]
+      ,[ModifiedDate]
+  FROM [AdventureWorks2019].[HumanResources].[Employee]
